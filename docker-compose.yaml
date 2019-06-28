@@ -3,7 +3,7 @@ services:
   angular:
     build:
       context: .
-      dockerfile: Dockerfile-Angular
+      dockerfile: Angular.Dockerfile
     volumes:
       - ./Angular:/usr/app
       - /usr/app/node_modules
@@ -12,6 +12,6 @@ services:
   nodejs:
     build:
       context: .
-      dockerfile: Dockerfile-NodeJS
+      dockerfile: NodeJS.Dockerfile
     ports:
       - 3000:3000
